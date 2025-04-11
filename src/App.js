@@ -1,18 +1,31 @@
 import React from 'react';
-import './App.css';
-import profilePic from './download.jpg';
+import BookDisplay from './bookDisplay';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={profilePic} className="profile-pic" alt="My Profile" />
-        <h1>Aleqsandre Gogiashvili</h1>
-        <p>Frontend Developer | React | JavaScript | CSS</p>
+const App = () => {
+    const bookInfo = {
+        image: 'https://th.bing.com/th/id/OIP.m3dSB_jJIuTfk5obG-eQggHaL0?w=125&h=200&c=7&r=0&o=5&pid=1.7',
+        title: 'Book title',
+        description: 'Book description',
+        characters: ['Character #1', 'Character #2', 'Character #3'],
+    };
 
-      </header>
-    </div>
-  );
-}
+    const printBookInfo = (title, characters) => {
+        console.log(`Title: ${title}`);
+        console.log('Characters:', characters.join(', '));
+    };
+
+    return (
+        <div>
+            <h1>Book Catalogue</h1>
+            <BookDisplay 
+                image={bookInfo.image} 
+                title={bookInfo.title} 
+                description={bookInfo.description} 
+                characters={bookInfo.characters} 
+                onButtonClick={printBookInfo} 
+            />
+        </div>
+    );
+};
 
 export default App;
