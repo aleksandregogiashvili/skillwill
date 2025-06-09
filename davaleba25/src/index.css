@@ -1,0 +1,41 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.btn {
+  background-color: royalblue;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+}
+
+.data-list {
+  max-height: 150px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.email-form {
+  margin-bottom: 1rem;
+}
+
+.heavy {
+  padding: 1rem;
+  background-color: #eee;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
